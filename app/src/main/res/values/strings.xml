@@ -9,4 +9,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="element_text">TEST</string>
+    <string name="color_wallpaper_generator">Color Wallpaper Generator</string>
+    <string name="generate">generate</string>
+    <string name="item">Item</string>
+    <string name="title_activity_detail_mode">DetailModeActivity</string>
+    <string name="set_wallpaper">set wallpaper</string>
 </resources>
