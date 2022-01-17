@@ -20,7 +20,7 @@ class ColorService(resources: Resources) {
             if (response.isSuccess){
                 return@withContext parseColors(response.getOrNull())
             } else
-                return@withContext Wallpaper("Monochromatique", ArrayList())
+                return@withContext Wallpaper("", ArrayList())
         }
     }
 

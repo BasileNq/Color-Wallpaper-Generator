@@ -17,7 +17,7 @@ class ViewModelMode : ViewModel() {
         return mutableListOf(
             Mode("Monochromatic", R.drawable.monochromatic),
             Mode("Square", R.drawable.square),
-            Mode("Triade",R.drawable.triade),
+            Mode("Triad",R.drawable.triade),
             //Mode("Shade",R.drawable.shade),
             Mode("Complementary", R.drawable.complementary),
         )
