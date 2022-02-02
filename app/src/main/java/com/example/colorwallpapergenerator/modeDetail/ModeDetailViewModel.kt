@@ -19,8 +19,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import android.util.DisplayMetrics
-
-
+import android.widget.Toast
 
 
 class ModeDetailViewModel(private val datas: ColorService) : ViewModel() {
@@ -67,7 +66,8 @@ class ModeDetailViewModel(private val datas: ColorService) : ViewModel() {
             e.printStackTrace()
         }
         //left top right bottom
-
+        val toast = Toast.makeText(context, "wallpaper set", Toast.LENGTH_SHORT)
+        toast.show()
     }
 }
 

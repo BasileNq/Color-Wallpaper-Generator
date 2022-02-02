@@ -1,6 +1,8 @@
 package com.example.colorwallpapergenerator.utils
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
+import com.example.colorwallpapergenerator.BuildConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
@@ -8,10 +10,15 @@ import okhttp3.Request
 import okhttp3.Response
 import org.json.JSONObject
 import org.json.JSONTokener
+import java.io.FileInputStream
 import java.lang.Exception
+import java.lang.System.getProperty
+import java.util.*
+import java.util.logging.Logger
 
 class Requester {
 
+    val apiKey = BuildConfig.API_KEY
     private val currentWallpaper = MutableLiveData<String>()
     private val apiURL: String = "https://random-palette-generator.p.rapidapi.com/palette/"
     var client: OkHttpClient = OkHttpClient()
@@ -25,7 +32,7 @@ class Requester {
         }
         val request = Request.Builder()
             .addHeader("x-rapidapi-host","random-palette-generator.p.rapidapi.com")
-            .addHeader("x-rapidapi-key","a7e5a0cf67msh654b69d77b40c90p12d2fbjsnc0c9c6213604")
+            .addHeader("x-rapidapi-key",apiKey)
             .url(finalUrl).build()
             val response = client.newCall(request).execute()
         return if (response != null)
