@@ -34,6 +34,7 @@ class DetailModeActivity : AppCompatActivity() {
         val textView: TextView = findViewById(R.id.textview_detail)
         val imageView: ImageView = findViewById(R.id.imageview_detail)
         val generateButton: Button = findViewById(R.id.generate_button)
+        val title: TextView = findViewById(R.id.title)
         val global: CardView = findViewById(R.id.global)
         val color1: View = findViewById(R.id.color_1)
         val color2: View = findViewById(R.id.color_2)
@@ -54,6 +55,7 @@ class DetailModeActivity : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         if (bundle != null) {
             textView.text = bundle.getString("text")
+            title.text = bundle.getString("text")
             imageView.id = bundle.getInt("image")
             imageView.setImageResource(imageView.id)
         }

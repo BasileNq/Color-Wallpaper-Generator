@@ -6,6 +6,33 @@
     android:layout_height="match_parent">
 
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.CardView"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color_wallpaper_generator"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/global"
         android:layout_width="match_parent"
@@ -14,19 +41,26 @@
         app:cardElevation="6dp"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/imageview_detail"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
         <TextView
             android:id="@+id/textview_detail"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/item"
             android:textAlignment="center"
             android:textSize="45sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/imageview_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            />
+
+
+
     </androidx.cardview.widget.CardView>
 
 
