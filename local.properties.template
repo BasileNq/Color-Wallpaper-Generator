@@ -1,0 +1,9 @@
+## This file must *NOT* be checked into Version Control Systems,
+# as it contains information specific to your local configuration.
+#
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+#Tue Jan 11 17:18:58 CET 2022
+sdk.dir="your sdk path"
+secret.color-token="a7e5a0cf67msh654b69d77b40c90p12d2fbjsnc0c9c6213604"
