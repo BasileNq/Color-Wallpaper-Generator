@@ -10,12 +10,15 @@ API used to retrieve colors: [Random Palette Generator](https://rapidapi.com/kar
 ## Overview
 
 Main menu:
-![Main Menu Screen](/images/MainMenu.png)
+
+<img src="/images/MainMenu.png" alt="Main Menu Screen" width="200"/>
 
 Monochromatique detail view:
+
 ![Monochromatique View Screen](/images/MonochromatiqueView.png)
 
 Design generated wallpaper:
+
 ![Design Wallpaper Screen](/images/DesignWallpaper.png)
 
 ## Usage
