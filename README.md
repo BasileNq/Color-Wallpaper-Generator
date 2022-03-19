@@ -20,6 +20,7 @@ Monochromatique detail view:
 Design generated wallpaper:
 
 <img src="/images/DesignWallpaper.png" alt="Design Wallpaper Screen" width="200"/>
+
 ## Usage
 
 If you have no local.properties file, create one from the local.properties.template
