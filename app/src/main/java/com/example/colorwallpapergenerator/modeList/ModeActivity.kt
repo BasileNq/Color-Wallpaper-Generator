@@ -12,7 +12,6 @@ import com.example.colorwallpapergenerator.databinding.ActivityMainBinding
 
 class ModeActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

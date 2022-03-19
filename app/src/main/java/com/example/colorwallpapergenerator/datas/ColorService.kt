@@ -8,7 +8,7 @@ import kotlinx.coroutines.withContext
 
 class ColorService(resources: Resources) {
 
-    /* Adds flower to liveData and posts value. */
+    /* Adds colors to liveData and posts value. */
     suspend fun getColors(mode: String): Wallpaper {
         var params: ArrayList<String> = ArrayList<String>()
         params.add(mode)

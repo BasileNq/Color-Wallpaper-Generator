@@ -19,11 +19,9 @@ import java.util.logging.Logger
 class Requester {
 
     val apiKey = BuildConfig.API_KEY
-    private val currentWallpaper = MutableLiveData<String>()
     private val apiURL: String = "https://random-palette-generator.p.rapidapi.com/palette/"
     var client: OkHttpClient = OkHttpClient()
 
-    /* Adds flower to liveData and posts value. */
     // headers: List<Pair<String, String>>
     fun  HttpGet(parameters : List<String>, url: String = apiURL): Result<String?> {
         var finalUrl: String = url

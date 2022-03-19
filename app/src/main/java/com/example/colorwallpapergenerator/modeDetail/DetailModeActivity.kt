@@ -60,7 +60,6 @@ class DetailModeActivity : AppCompatActivity() {
             imageView.setImageResource(imageView.id)
         }
         modeDetailViewModel.currentWallpaper.observe(this, Observer {
-            //generated_colors.text = it.data[0].palette.toString()
             color1.setBackgroundColor(Color.parseColor(it.data[0].palette[0]))
             color2.setBackgroundColor(Color.parseColor(it.data[0].palette[1]))
             color3.setBackgroundColor(Color.parseColor(it.data[0].palette[2]))
