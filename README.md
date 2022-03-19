@@ -15,12 +15,11 @@ Main menu:
 
 Monochromatique detail view:
 
-![Monochromatique View Screen](/images/MonochromatiqueView.png)
+<img src="/images/MonochromatiqueView.png" alt="Monochromatique View Screen" width="200"/>
 
 Design generated wallpaper:
 
-![Design Wallpaper Screen](/images/DesignWallpaper.png)
-
+<img src="/images/DesignWallpaper.png" alt="Design Wallpaper Screen" width="200"/>
 ## Usage
 
 If you have no local.properties file, create one from the local.properties.template
